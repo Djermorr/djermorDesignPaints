@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Djermor Design Paints</title>
+  </head>
+  <body>
+    <header>
+      <h1>Djermor Design Paints</h1>
+    </header>
+
+    <main>
+      <!-- 
+      AANPASSINGEN TE DOEN
+        Responsiveness
+        Foto als background img ipv aparte foto
+        title uit text zetten
+        niet absolute position
+        meer accent kleuren gebruiken
+      -->
+      <div class="introduction" style="background-image: url(public/images/2.jpg);">
+        <div class="introduction__title">Miniature painting</div>
+        <div class="introduction__text">
+          <p>Hello I'm Robbe and I paint miniatures. If you have a miniature that needs painting and you just don't know how to do it or don't have the time yourself I will happily paint the miniature for you for a small fee. See examples below.</p></div>
+      </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="images/1.jpg"></div>
+          <div class="swiper-slide"><img src="images/2.jpg"></div>
+          <div class="swiper-slide"><img src="images/3.jpg"></div>
+          <div class="swiper-slide"><img src="images/4.jpg"></div>
+          <div class="swiper-slide"><img src="images/5.jpg"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+<div class="container">
+  <div class="container__left">
+      <h2>Contact Form</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+      </div>
+      <div class ="container__right">
+        <h2>Contact Information</h2>
+        <p>Telefoon: 0471 59 07 30</p>
+        <p>Email: robbevandijck02@student.ap.be</p>
+        <div class="address-container"> Adres:
+          <div class="progressContainer">
+            <div class="progress"></div>
+          </div>
+        <p id="address"></p> </div>
+        </div>
+        
+    </div>
+  </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
