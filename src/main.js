@@ -8,7 +8,7 @@ import './styles/style.css'
   import 'swiper/css/pagination';
 
   // init Swiper:
-  const swiper = new Swiper('.swiper', {
+new Swiper('.swiper', {
     // configure Swiper to use modules
     modules: [Navigation, Pagination],
   // Optional parameters
@@ -43,9 +43,7 @@ setTimeout(() => changeProgress(86), 1350);
 setTimeout(() => changeProgress(98), 1700);
 setTimeout(() => changeProgress(100), 2000);
 
-async function success(position) {
-  const latitude = position.coords.latitude;
-  const longitude = position.coords.longitude;
+async function success() {
   const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/4.613841,51.272509.json?access_token=pk.eyJ1Ijoicm9iYmV2ZCIsImEiOiJjbGVta2RlbzgwbWFiM3dzNHJwZnZpd29qIn0.3dIqb4NcEPAU7s0hW0NC5w`;
 
   try {
